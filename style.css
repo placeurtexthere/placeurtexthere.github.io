@@ -1,0 +1,130 @@
+:root{
+    --hight: 50px; /* The height above the icons */
+    --blur: 0.8px; /* The blurrines of the logo and the icons */
+    --rightleft: 45px; /**/
+}       /* varriables */
+@font-face{ 
+	font-family: 'own';
+    src:url('third-rail.ttf')
+}       /* font */
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+	background: url('pics-vids/bg.jpg') no-repeat;
+    background-size: cover;
+    
+}       /* background video */
+
+.vippitwo {
+    font-family: 'own';    
+    font-size: 100px;
+    text-shadow: 8px 8px 0px black;
+    color: transparent;
+    filter: blur(var(--blur));
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}       /* main text */
+.vippi {
+    font-family: 'own';    
+    font-size: 100px;
+    background: -webkit-linear-gradient(rgb(126, 205, 214) 44.72%, rgb(114, 8, 104) 55.28%, rgb(207, 61, 198) 56.19%, rgb(207, 61, 198) 70.67%, rgb(114, 8, 104) 82.24%, rgb(114, 8, 104) 86.43%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(100%) blur(var(--blur));
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}       /* shadow */
+
+.yt {
+    width: 45px;
+    padding-left: var(--rightleft);
+    padding-right: var(--rightleft);
+    padding-top: var(--hight);
+    filter: blur(var(--blur));
+}       /* youtube icon */
+
+.dc {
+    width: 45px;
+    padding-left: var(--rightleft);
+    padding-right: var(--rightleft);
+    padding-top: var(--hight);
+    filter: blur(var(--blur));
+}       /* discord icon */
+
+.gh {
+    width: 45px;
+    padding-left: var(--rightleft);
+    padding-right: var(--rightleft);
+    padding-top: var(--hight);
+    filter: blur(var(--blur));
+}       /* github icon */
+
+.icons {
+    display:flex;
+    position:fixed;
+    top:60%;
+    left:50%;
+    text-align:center;
+    transform:translateX(-50%) translateY(-50%);
+}       /* all icons */
+
+.volume {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    text-align: center;
+    transform: translateX(-50) translateY(-50);
+}       /* volume all */
+
+.minus, .plus {
+    text-align: center;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+    color: black;
+    width: 25px;
+    height: 25px;
+}       /* volume plus, minus */
+
+.minus:hover, .plus:hover {
+    background-color: rgba(185, 15, 176, 0.5);
+}       /* volume plus, minus on hover */
+
+.showvol {
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+    color: black;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+}       /* volume display */
+
+@keyframes normal {
+    5% {transform: rotate(+5deg)}
+    20% {transform: rotate(-5deg)}
+    35% {transform: rotate(+5deg)}
+    50% {transform: rotate(-5deg)}
+
+}
+
+.vippi, .vippitwo {
+    animation-name: noarmal;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
